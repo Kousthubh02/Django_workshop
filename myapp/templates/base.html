@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>{% block title %}My Website{% endblock %}</title>
+    {% block stylesheets %}
+        <!-- Include any CSS files here -->
+    {% endblock %}
+</head>
+<body>
+    <nav>
+        <!-- Include navigation links or menus here -->
+    </nav>
+    <div class="container">
+        {% block content %}
+            <!-- This block will be overridden by child templates -->
+        {% endblock %}
+    </div>
+    {% block scripts %}
+        <!-- Include any JavaScript files here -->
+    {% endblock %}
+</body>
+</html>
